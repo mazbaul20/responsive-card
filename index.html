@@ -4,9 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-32x32.png">
     <title>Responsive design</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            outline:0px;
+        }
+        .container{
+            display:flex;
+            flex-direction:row;
+            margin:0px auto;
+        }
+        h1{
+            font-size:40px;
+            text-align: center;
+            padding:20px;
+            margin-top:0px;
+            background-color: #1982CF;
+            color:white;
+            width:100%;
+        }
+        .card{
+            width:350px;
+            border:3px solid lightgray;
+            margin:15px;
+            border-radius:30px;
+        }
+        .card img{
+            width:100%;
+            border-top-left-radius: 27px;
+            border-top-right-radius: 27px;
+        }
+        .card p{
+            text-align: justify;
+            padding:0px 5px;
+        }
+        @media (max-width:350px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            .container .card{
+                background-color: #efb8d2;
+                margin: 0px auto;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        @media (min-width:350px){
+            .container{
+                display: flex;
+                flex-direction:column;
+            }
+            .container .card{
+                background-color: lightblue;
+                margin: 0px auto;
+                margin-bottom: 10px;
+            }
+        }
+        @media (min-width:760px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .container .card{
+                background-color: #cde6ad;
+            }
+        }
+        @media (min-width:960px){
+            .container{
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(3,1fr);
+                justify-content: center;
+            }
+            .container .card{
+                background-color: rgb(154, 197, 226);
+                max-width:282px;
+            }
+        }
+        @media (min-width:1200px){
+            .container{
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(4,1fr);
+                justify-content: center;
+            }
+            .container .card{
+                background-color: rgb(197, 171, 171);
+                max-width:300px;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Responsive Design</h1>
+    <div class="container">
+        
+        <div class="card">
+            <img src="images/healthy food.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consectetur et accusamus cum nostrum accusantium repudiandae commodi, veritatis dignissimos quod.</p>
+        </div>
+        <div class="card">
+            <img src="images/healthy food.jpg" alt="">
+            <p>Maxime quam, aut adipisci ducimus, qui cum, ut deserunt asperiores libero quis quos provident velit cupiditate nisi odit doloremque beatae.</p>
+        </div>
+        <div class="card">
+            <img src="images/healthy food.jpg" alt="">
+            <p>Recusandae, ipsum. Ut libero molestias exercitationem consequatur perferendis, expedita asperiores excepturi quaerat aspernatur rerum nihil! Tempora, amet? Ratione, nam voluptatum.</p>
+        </div>
+        <div class="card">
+            <img src="images/healthy food.jpg" alt="">
+            <p>Quisquam hic eos nam neque, nisi perspiciatis facere quam dolore itaque fugiat quo voluptatum rerum eius, quod in, soluta ex!</p>
+        </div>
+        <div class="card">
+            <img src="images/healthy food.jpg" alt="">
+            <p>Ea, aut. Quod adipisci cumque similique dolorem tempora illo reprehenderit quo, dolor non odit incidunt asperiores voluptates molestias fugit est!</p>
+        </div>
+        <div class="card">
+            <img src="images/healthy food.jpg" alt="">
+            <p>Nesciunt et laudantium fugit expedita iusto distinctio dolore sint molestiae nulla quidem. Quaerat et reiciendis veritatis ducimus voluptas, repellendus facilis?</p>
+        </div>
+        <div class="card">
+            <img src="images/healthy food.jpg" alt="">
+            <p>Accusamus sint ipsam dolore, quo natus illo iure neque, quas ipsa corrupti itaque! Totam natus ad soluta blanditiis, omnis delectus.</p>
+        </div>
+        <div class="card">
+            <img src="images/healthy food.jpg" alt="">
+            <p>Sunt aspernatur veniam fugit quos velit dicta placeat illo? Rem aspernatur qui explicabo molestias ut earum eius eveniet quae iusto?</p>
+        </div>
+    </div>
+    
 </body>
 </html>
